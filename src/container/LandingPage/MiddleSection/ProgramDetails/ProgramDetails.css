@@ -1,0 +1,34 @@
+.heading {
+    text-align: center;
+}
+
+.mission-details {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 6fr 6fr;
+    padding: 0 2rem 0 2rem;
+}
+
+.mission-details p{
+    font-size: 1.65vw;
+}
+
+@media only screen and (max-width: 600px) {
+    .mission-details {
+        padding: 1rem;
+        grid-template-columns: repeat(auto-fill, 100%);
+    }
+    .mission-details p{
+        font-size: 15px !important;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .mission-details {
+        padding: 1rem;
+        grid-template-columns: repeat(auto-fill, 100%);
+    }
+    .mission-details p{
+        font-size: 20px;
+    }
+}

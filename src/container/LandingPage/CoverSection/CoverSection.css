@@ -1,0 +1,43 @@
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#myVideo {
+    width: 100%;
+    top: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    #myVideo {
+        overflow: hidden;
+        object-fit: cover;
+        width: auto;
+        height: 100vh;
+        top: 0;
+    }
+    .content {
+        font-size: 50px !important;
+        width: 100% !important;
+        overflow: hidden;
+    }
+}
+
+.content {
+    position: absolute;
+    z-index: 100;
+    top: 20;
+    color: #f1f1f1;
+    width: 50%;
+    text-align: center;
+    font-size: 1.5vw;
+    overflow: hidden;
+}
+
+.content {
+    letter-spacing: 0.2em;
+    text-shadow: 2px 2px 5px black;
+}
+
+  

@@ -1,0 +1,73 @@
+.launch-grid {
+    display: grid;
+    grid-gap: 1rem;
+    padding: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+  
+.launch-grid>* {
+    background-color: white;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
+}
+
+.card {
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+.card> div {
+    padding: 1rem 0 1rem 0;
+}
+
+.missionImg {
+    width: 100%;
+}
+
+span {
+    padding: 0.5rem;
+    color: gray;
+    font-weight: bold;
+}
+
+.wikipedia-url {
+    color: darkblue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .launch-grid {
+        grid-template-columns: repeat(auto-fill, 30%);
+    }
+    .card {
+        padding: 20px !important;
+    }
+    .card> div {
+        padding: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .launch-grid {
+        grid-template-columns: repeat(auto-fill, 47%);
+        padding: 1rem;
+    }
+    .card {
+        padding: 10px !important;
+    }
+    .card> div {
+        padding: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .launch-grid {
+        grid-template-columns: repeat(auto-fill, 100%);
+        padding: 1rem;
+    }
+    .card {
+        padding: 20px !important;
+    }
+    .card> div {
+        padding: 0 !important;
+    }
+}
